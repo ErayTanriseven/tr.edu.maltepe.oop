@@ -1,15 +1,13 @@
-package tr.edu.maltepe.oop;
-
 public class Main {
-
     public static void main(String[] args) {
 
-        Professor p1, p2;
+        Book b1 =new Book("The 100",336, "Kass Morgan", "Brown Books");
+        b1.setNumberOfPage(200);
+        System.out.println(b1.getNumberOfPage());
 
-        p1 = new Professor(name:"ensar gül");
-        p1.teaches();
+        Book b2 =new Book("LOTR",479, "J.R.R. Tolkien", "Allen&Unwin");
+        b2.setName("LOTR");
+        System.out.println(b2.getName());
 
-        p2 = new Professor(name:"raif hoca");
-        p2.teaces();
     }
 }
