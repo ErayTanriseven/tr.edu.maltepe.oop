@@ -1,11 +1,13 @@
 package tr.edu.maltepe.oop;
 
-public class Student extends Main {
+public class Student extends Person{
 
-    private int id = 1223334444;
+    public Student(String name){
+        super(name);
+    }
 
+    public void learn(){
+        System.out.println("Student "+super.getName()+" learns.");
 
-    public int getX() {
-        return id;
     }
 }
